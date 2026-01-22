@@ -1,63 +1,63 @@
-    body {
-        background: #111;
-        color: white;
-        font-family: Arial, sans-serif;
-        text-align: center;
-        margin: 0;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
+body {
+    background: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
-    h1 {
-        font-size: 2em;
-        margin-bottom: 20px;
-        color: #ff66cc;
-    }
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ff66cc;
+}
 
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(4, 80px);
-        gap: 12px;
-    }
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    gap: 12px;
+}
 
-    .card {
-        width: 80px;
-        height: 80px;
-        background: #222;
-        border-radius: 10px;
-        font-size: 32px;
-        font-weight: bold;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        transition: transform .3s, background .3s, color .3s;
-        user-select: none;
-    }
+.card {
+    width: 80px;
+    height: 80px;
+    background: #222;
+    border-radius: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform .3s, background .3s, color .3s;
+    user-select: none;
+}
 
-    .card:hover {
-        background: #333;
-        transform: scale(1.05);
-    }
+.card:hover {
+    background: #333;
+    transform: scale(1.05);
+}
 
-    .reveal {
-        background: #ff66cc !important;
-        color: #111 !important;
-        transform: rotateY(180deg);
-    }
+.reveal {
+    background: #ff66cc !important;
+    color: #111 !important;
+    transform: rotateY(180deg);
+}
 
-    #mensajeFinal {
-        margin-top: 25px;
-        font-size: 3em;
-        color: #ff99dd;
-        display: none;
-        animation: aparecer 1s ease forwards;
-    }
+#mensajeFinal {
+    margin-top: 25px;
+    font-size: 2.5em;
+    color: #ff99dd;
+    display: none;
+    animation: aparecer 1s ease forwards;
+}
 
-    @keyframes aparecer {
-        0% { opacity: 0; transform: scale(0.5); }
-        100% { opacity: 1; transform: scale(1.1); }
-    }
+@keyframes aparecer {
+    0% { opacity: 0; transform: scale(0.5); }
+    100% { opacity: 1; transform: scale(1.1); }
+}
